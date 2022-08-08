@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curd Operation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>      
+    <div class="container">
+        <div class="row">
+            <h1>Registration Form</h1>
+        </div> 
+        <!-- Form to take data from user -->
+        <div class="row" >
+            <div class="form-group" id="form-place">
+                <!-- First Name -->
+                <!-- <label for="fname">First Name</label> -->
+                <input type="text" name="fname" id="fname" class='form-control' placeholder="First Name">
+                <p id="fname_err_msg" class="error_msg"></p>
+                
+                <!-- Last Name -->
+                <!-- <label for="lname">Last Name</label> -->
+                <input type="text" name="lname" id="lname" class='form-control' placeholder="Last Name">
+                <p id="lname_err_msg"  class="error_msg"></p>
+
+                <!-- Email -->
+                <!-- <label for="email">Email Id</label> -->
+                <input type="text" name="email" id="email" class='form-control' placeholder="Email ID">
+                <p id="email_err_msg"  class="error_msg"></p>
+        
+                <!-- Date of Birth -->
+                <div class="dobb">
+                    <label for="dob" id="dob_label">Date of Birth</label>
+                    <input type="date" name="dob" id="dob" class='form-control date'>
+                </div>
+                <p id="dob_err_msg"  class="error_msg"></p>
+
+                <!-- Gender -->
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" id="Male" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="Female" value="Female">
+                <label for="female">Female</label>
+                <p id="gender_err_msg"  class="error_msg"></p>
+
+                <!-- Branch -->
+                <label for="branch">Branch</label>
+
+                    <input type="radio" name="branch" id="Civil" value="Civil">
+                    <label for="civil">Civil</label>
+
+                    <input type="radio" name="branch" id="Computer" value="Computer">
+                    <label for="computer">Computer</label>
+
+                    <input type="radio" name="branch" id="E_TC" value="E_TC">
+                    <label for="e&tc">E&TC</label>
+
+                    <input type="radio" name="branch" id="Mechanical" value="Mechanical">
+                    <label for="mechanical">Mechanical</label>
+
+                <p id="branch_err_msg"  class="error_msg"></p>
+
+                <!-- Buttons -->
+                <input type="button" value="Save" onclick="getRegistrationDetails()" id="save" class="btn btn-success">
+                <br><br>
+             </div>
+        </div>
+
+     <!-- Table to print data -->
+     <table id="table_data">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Id</th>
+            <th>Date of Birth</th>
+            <th>Gender</th>
+            <th>Branch</th>
+            <th>Action</th>
+        </tr>
+     </table>
+    </div>
+</body>
+<script src="validations.js"></script>
+</html>

@@ -1,0 +1,61 @@
+#form-place{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+table{
+    width: 100%; 
+}
+table,td,tr,th{
+    text-align: center;
+    padding: 10px;
+}
+button{
+    margin: 10px;
+}
+.btn{
+    margin-left: 10px;
+}
+h1{
+    text-align: center;
+}
+
+
+
+#save{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+input{
+    text-align: center;
+}
+.dobb{
+    display: flex;
+}
+#dob{
+    width: 75%;
+}
+#dob_label{
+    width: 25%;
+}
+.error_msg{
+    color: red;
+    text-align: center;
+    visibility: visible;
+    margin-top: 15px;
+}
+
+.hide{
+    visibility: hidden;
+}
+label{
+    padding: 10px;
+}
+
+.del{
+    margin-top: 5px;
+}
+.update{
+    margin-top: 5px;
+}
